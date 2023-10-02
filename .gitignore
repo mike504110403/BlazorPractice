@@ -12,3 +12,11 @@ PushFolder/wwwroot/_framework/
 PushFolder/wwwroot/css/
 
 PushFolder/
+
+BlazorPractice/Server/bin/
+
+BlazorPractice/Server/obj/
+
+BlazorPractice/Shared/bin/
+
+BlazorPractice/Shared/obj/
