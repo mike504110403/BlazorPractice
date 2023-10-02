@@ -1,0 +1,14 @@
+
+BlazorPractice/.vs/
+
+BlazorPractice/Client/bin/
+
+BlazorPractice/Client/obj/
+
+BlazorPractice/Client/Properties/
+
+PushFolder/wwwroot/_framework/
+
+PushFolder/wwwroot/css/
+
+PushFolder/

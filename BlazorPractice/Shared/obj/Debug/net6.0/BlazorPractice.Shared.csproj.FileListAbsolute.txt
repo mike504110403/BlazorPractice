@@ -1,0 +1,11 @@
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\bin\Debug\net6.0\BlazorPractice.Shared.deps.json
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\bin\Debug\net6.0\BlazorPractice.Shared.dll
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\bin\Debug\net6.0\BlazorPractice.Shared.pdb
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\obj\Debug\net6.0\BlazorPractice.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\obj\Debug\net6.0\BlazorPractice.Shared.AssemblyInfoInputs.cache
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\obj\Debug\net6.0\BlazorPractice.Shared.AssemblyInfo.cs
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\obj\Debug\net6.0\BlazorPractice.Shared.csproj.CoreCompileInputs.cache
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\obj\Debug\net6.0\BlazorPractice.Shared.dll
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\obj\Debug\net6.0\refint\BlazorPractice.Shared.dll
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\obj\Debug\net6.0\BlazorPractice.Shared.pdb
+D:\MyPractice\BlazorPractice\BlazorPractice\Shared\obj\Debug\net6.0\ref\BlazorPractice.Shared.dll
