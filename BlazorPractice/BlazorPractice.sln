@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPractice.Server", "Server\BlazorPractice.Server.csproj", "{B74C2A51-C92E-40D8-946D-F7BAC77D289C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPractice.Server", "Server\BlazorPractice.Server.csproj", "{B74C2A51-C92E-40D8-946D-F7BAC77D289C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPractice.Client", "Client\BlazorPractice.Client.csproj", "{DED496B4-C819-4982-B73C-892913E88FA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPractice.Client", "Client\BlazorPractice.Client.csproj", "{DED496B4-C819-4982-B73C-892913E88FA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPractice.Shared", "Shared\BlazorPractice.Shared.csproj", "{7C9E3FDC-A1D2-4B12-B365-2537F4F709F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPractice.Shared", "Shared\BlazorPractice.Shared.csproj", "{7C9E3FDC-A1D2-4B12-B365-2537F4F709F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

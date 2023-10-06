@@ -1,0 +1,27 @@
+﻿@inherits LayoutComponentBase
+@using MudBlazor
+
+<MudThemeProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Color="Color.Primary">
+        BlazorApp - MudBlazor Demo
+    </MudAppBar>
+    <MudDrawer Open="true">
+        <CustomMudNavMenu />
+    </MudDrawer>
+
+    <MudMainContent>
+        <MudContainer Fixed="true">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
+
+
+@code {
+
+}

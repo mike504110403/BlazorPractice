@@ -1,6 +1,7 @@
 using BlazorPractice.Client;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using MudBlazor.Services;
 
 // 建立物件
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
@@ -14,6 +15,8 @@ builder.RootComponents.Add<HeadOutlet>("head::after"); // 改首頁的 head用
 // 故任何 Scoped 物件一旦建立之後便會跟 Singleton 物件一樣持續存在，
 // 直到應用程式結束才會消失 => 效果同 Singleton 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+// 註冊 MudBlazor 服務
+builder.Services.AddMudServices();
 
 // 運行
 await builder.Build().RunAsync();
