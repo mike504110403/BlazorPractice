@@ -37,6 +37,38 @@ namespace BlazorPractice.Server.Dto
         /// </summary>
         [JsonPropertyName("Payterms")]
         public string? Payterms { get; set; }
-
+    }
+    public class SalesInputModel
+    {
+        /// <summary>
+        /// 書店名稱
+        /// </summary>
+        [JsonPropertyName("StorId")]
+        public string? StorId { get; set; }
+        /// <summary>
+        /// 訂單編號
+        /// </summary>
+        [JsonPropertyName("OrderNum")]
+        public string? OrderNum { get; set; }
+        /// <summary>
+        /// 銷售日期
+        /// </summary>
+        [JsonPropertyName("OrderDate")]
+        public DateTime OrderDate { get; set; }
+        /// <summary>
+        /// 銷售數量
+        /// </summary>
+        [JsonPropertyName("Qty")]
+        public short Qty { get; set; }
+        /// <summary>
+        /// 付款條件
+        /// </summary>
+        [JsonPropertyName("Payterms")]
+        public string? Payterms { get; set; }
+        /// <summary>
+        /// 書名
+        /// </summary>
+        [JsonPropertyName("TitleId")]
+        public string? TitleId { get; set; }
     }
 }
