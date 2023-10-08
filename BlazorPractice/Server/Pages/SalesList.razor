@@ -1,0 +1,40 @@
+﻿@page "/salesList"
+
+@inject HttpClient Http
+@inject IPubsService pubsService
+@inject IJSRuntime JSRuntime
+
+
+<PageTitle>銷售資料列表</PageTitle>
+
+<h1>銷售資料列表資料顯示</h1>
+
+<p>顯示接收的API資料</p>
+
+@if (salesData == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <MudDataGrid Items="@salesData">
+        <Columns>
+            <PropertyColumn Property="x => x.StorName" Title="書店名稱" />
+            <PropertyColumn Property="x => x.OrderNum" Title="訂單編號" />
+            <PropertyColumn Property="x => x.OrderDate" Title="銷售日期" />
+            <PropertyColumn Property="x => x.TitleName" Title="書名" />
+            <PropertyColumn Property="x => x.Qty" Title="銷售數量" />
+            <PropertyColumn Property="x => x.Payterms" Title="付款條件" />
+        </Columns>
+    </MudDataGrid>
+}
+
+
+@code {
+    private List<SalesInfoViewModel> salesData = new List<SalesInfoViewModel>();
+    // 進頁面時，先抓取資料
+    protected override async Task OnInitializedAsync()
+    {
+        salesData = await pubsService.GetAsync();
+    }
+}

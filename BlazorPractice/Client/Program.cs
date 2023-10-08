@@ -1,6 +1,7 @@
 using BlazorPractice.Client;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
 
 // 建立物件
@@ -17,6 +18,19 @@ builder.RootComponents.Add<HeadOutlet>("head::after"); // 改首頁的 head用
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 // 註冊 MudBlazor 服務
 builder.Services.AddMudServices();
+
+//// 註冊DBContext
+//builder.Services.AddDbContext<PubsContext>(options =>
+//         options.UseSqlServer("Server=localhost;Database=Pubs;Trusted_Connection=True;TrustServerCertificate=true;"));
+//// 註冊 Api 的 Controller
+//builder.Services.AddControllers();
+//// 註冊PubsWebAPIService服務
+//builder.Services.AddHttpClient<IPubsService, PubsWebAPIService>(client =>
+//{
+//    client.BaseAddress = new Uri("https://localhost:5001/");
+//    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+//});
+
 
 // 運行
 await builder.Build().RunAsync();
