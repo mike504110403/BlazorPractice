@@ -24,13 +24,13 @@ builder.Services.AddControllers();
 // 註冊PubsWebAPIService服務
 builder.Services.AddHttpClient<IPubsService, PubsWebAPIService>(client =>
 {
-    client.BaseAddress = new Uri("https://localhost:5001/");
+    client.BaseAddress = new Uri("https://localhost:7186/");
     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 });
 // 註冊 MudBlazor 服務
 builder.Services.AddMudServices();
 
-//builder.Services.AddSignalR();
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 

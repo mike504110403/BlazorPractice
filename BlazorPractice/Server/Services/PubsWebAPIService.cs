@@ -19,7 +19,7 @@ namespace BlazorPractice.Server.Services
         /// <returns></returns>
         public async Task<List<SalesInfoViewModel>> GetAsync()
         {
-            var content = await _httpClient.GetStringAsync("api/SalesInfo");
+            var content = await _httpClient.GetStringAsync("api/Pubs/GetSalesList");
             var pubsList = JsonSerializer.Deserialize<List<SalesInfoViewModel>>(content);
             return pubsList ?? new List<SalesInfoViewModel>();
         }
