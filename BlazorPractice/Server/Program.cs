@@ -7,9 +7,13 @@ using Microsoft.EntityFrameworkCore;
 using BlazorPractice.Server;
 using Microsoft.AspNetCore.Components.Web;
 using MudBlazor.Services;
+using Microsoft.AspNetCore;
+
+WebHost.CreateDefaultBuilder(args).UseSetting(WebHostDefaults.DetailedErrorsKey, "true");
+WebHost.CreateDefaultBuilder(args).UseEnvironment(Environments.Development);
+
 // «Ø¥ßWebApplicationBuilder ¹ê¨Ò
 var builder = WebApplication.CreateBuilder(args);
-
 // µù¥URazorPage
 builder.Services.AddRazorPages();
 // µù¥UBlazor Server

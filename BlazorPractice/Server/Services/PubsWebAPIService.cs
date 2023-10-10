@@ -68,7 +68,7 @@ namespace BlazorPractice.Server.Services
         /// <exception cref="NotImplementedException"></exception>
         public async Task DeleteAsync(string orderNum)
         {
-            await _httpClient.DeleteAsync($"api/Pubs/DeleteSaleByOrdNum/{orderNum}");
+            await _httpClient.DeleteAsync($"api/Pubs/DeleteSaleByOrdNum?orderNum={orderNum}");
         }
     }
 }
